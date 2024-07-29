@@ -26,6 +26,21 @@
         .about-section, .projects-section, .skills-section, .contact-section {
             padding: 60px 0;
         }
+        .about-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #333;
+            object-fit: cover;
+        }
+        .about-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about-content p {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
@@ -65,7 +80,13 @@
     </section>
     <section class="about-section" id="about">
         <h1>About</h1>
-        <!-- About content here -->
+        <div class="container">
+            <div class="about-content">
+                <img src="images/about.jpg" alt="About Me" class="about-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula ex ac nulla dictum, nec hendrerit nisi bibendum. Phasellus sed nisl eros. Sed in cursus lectus.</p>
+                <p>Vestibulum ac facilisis justo. Integer ac semper nisi. Fusce laoreet, ex et iaculis fermentum, velit augue ullamcorper odio, a tincidunt nisi libero id nisi.</p>
+            </div>
+        </div>
     </section>
     <section class="projects-section" id="projects">
         <h1>Projects</h1>
