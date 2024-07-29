@@ -26,12 +26,16 @@
         .about-section, .projects-section, .skills-section, .contact-section {
             padding: 60px 0;
         }
+        .about-section {
+            text-align: center;
+        }
         .about-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 5px solid #333;
             object-fit: cover;
+            margin-bottom: 20px;
         }
         .about-content {
             max-width: 600px;
@@ -76,11 +80,13 @@
 
     <!-- Sections -->
     <section class="section" id="home">
-        <h1>Welcome to My Portfolio</h1>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+        </div>
     </section>
     <section class="about-section" id="about">
-        <h1>About</h1>
         <div class="container">
+            <h1>About</h1>
             <div class="about-content">
                 <img src="images/about/1.jpg" alt="About Me" class="about-image">
                 <p>Hi, I'm Rishiraj! I'm a data analyst with a passion for transforming raw data into meaningful insights. Currently studying BTech in Computer Science at NIMS University, Jaipur, I specialize in using Python, SQL, and cutting-edge data visualization tools to help organizations make data-driven decisions.</p>
@@ -89,16 +95,22 @@
         </div>
     </section>
     <section class="projects-section" id="projects">
-        <h1>Projects</h1>
-        <!-- Projects content here -->
+        <div class="container">
+            <h1>Projects</h1>
+            <!-- Projects content here -->
+        </div>
     </section>
     <section class="skills-section" id="skills">
-        <h1>Skills</h1>
-        <!-- Skills content here -->
+        <div class="container">
+            <h1>Skills</h1>
+            <!-- Skills content here -->
+        </div>
     </section>
     <section class="contact-section" id="contact">
-        <h1>Contact Me</h1>
-        <!-- Contact content here -->
+        <div class="container">
+            <h1>Contact Me</h1>
+            <!-- Contact content here -->
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
