@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            position: relative;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ff4081;
+        }
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .about-section, .projects-section, .skills-section, .contact-section {
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <section class="section" id="home">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+    <section class="about-section" id="about">
+        <h1>About</h1>
+        <!-- About content here -->
+    </section>
+    <section class="projects-section" id="projects">
+        <h1>Projects</h1>
+        <!-- Projects content here -->
+    </section>
+    <section class="skills-section" id="skills">
+        <h1>Skills</h1>
+        <!-- Skills content here -->
+    </section>
+    <section class="contact-section" id="contact">
+        <h1>Contact Me</h1>
+        <!-- Contact content here -->
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Smooth scrolling for navigation links
+            $(".nav-link").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
