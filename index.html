@@ -3,192 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            position: relative;
-        }
-        .navbar {
-            background-color: #333;
-        }
-        .navbar-nav .nav-link {
-            color: #fff;
-            margin-right: 15px;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #ff4081;
-        }
-        .section {
-            padding: 100px 0;
-            text-align: center;
-        }
-        .about-section, .projects-section, .skills-section, .contact-section {
-            padding: 60px 0;
-        }
-        .about-section, .projects-section, .skills-section, .contact-section {
-            text-align: center;
-        }
-        .about-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #333;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        .about-content, .projects-content, .skills-content, .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .about-content p, .projects-content p, .skills-content p, .contact-content p {
-            margin: 20px 0;
-        }
-        .project-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            text-align: left;
-        }
-        .skills-list, .contact-list {
-            list-style: none;
-            padding: 0;
-        }
-        .skills-list li, .contact-list li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .skills-list li::before {
-            content: "✔️";
-            margin-right: 10px;
-            color: #ff4081;
-        }
-        .contact-list li i {
-            margin-right: 10px;
-        }
-    </style>
+    <title>Rishiraj - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<body>
+    <header>
+        <h1>Rishiraj's Data Analytics Portfolio</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="https://www.linkedin.com/rishiraj1746">LinkedIn</a>
+            <a href="https://github.com/rishiraj1746">GitHub</a>
+        </nav>
+    </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">MyPortfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>I am Rishiraj, a B.Tech Computer Science student specializing in Data Analytics. I have hands-on experience with Python libraries such as Numpy, Pandas, Matplotlib, as well as databases like MySQL. I am passionate about extracting insights from data and building solutions that help businesses make data-driven decisions.</p>
+        </section>
 
-    <!-- Sections -->
-    <section class="section" id="home">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-        </div>
-    </section>
-    <section class="about-section" id="about">
-        <div class="container">
-            <h1>About</h1>
-            <div class="about-content">
-                <img src="images/about/1.jpg" alt="About Me" class="about-image">
-                <p>Hi, I'm Rishiraj! I'm a data analyst with a passion for transforming raw data into meaningful insights. Currently studying BTech in Computer Science at NIMS University, Jaipur, I specialize in using Python, SQL, and cutting-edge data visualization tools to help organizations make data-driven decisions.</p>
-                <p>On this website, you'll find a showcase of my work, including projects that highlight my skills and expertise. Whether you're interested in data analytics, data visualization, or simply want to connect, feel free to explore my projects or reach out to me directly.</p>
-            </div>
-        </div>
-    </section>
-    <section class="projects-section" id="projects">
-        <div class="container">
-            <h1>Projects</h1>
-            <div class="projects-content">
-                <div class="project-card">
-                    <h2>MySQL with Python</h2>
-                    <p>This project demonstrates how to use Python to interact with MySQL databases, performing various operations such as data retrieval, insertion, and manipulation. The project showcases the integration of Python with SQL to manage and analyze data efficiently.</p>
-                    <p><a href="https://github.com/rishiraj1746/MySQL_with_Python" target="_blank">View Project on GitHub</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="skills-section" id="skills">
-        <div class="container">
-            <h1>Skills</h1>
-            <div class="skills-content">
-                <h2>Technical Skills</h2>
-                <ul class="skills-list">
-                    <li>Excel</li>
-                    <li>Data Visualisation</li>
-                    <li>SQL</li>
-                    <li>Data Cleaning</li>
-                    <li>Statistical Knowledge</li>
-                    <li>Python</li>
-                    <li>Machine Learning</li>
-                    <li>Data Management</li>
-                    <li>Domain Knowledge</li>
-                </ul>
-                <h2>Soft Skills</h2>
-                <ul class="skills-list">
-                    <li>Attention to Detail</li>
-                    <li>Communication Skills</li>
-                    <li>Problem Solving Skills</li>
-                    <li>Teamwork</li>
-                    <li>Critical Thinking</li>
-                    <li>Curiosity</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <h1>Contact Me</h1>
-            <div class="contact-content">
-                <ul class="contact-list">
-                    <li><i class="fas fa-envelope"></i> rishiraj1746@gmail.com</li>
-                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/rishiraj1746" target="_blank">www.linkedin.com/in/rishiraj1746</a></li>
-                    <li><i class="fab fa-threads"></i> rrishirajverma</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python (Numpy, Pandas, Matplotlib)</li>
+                <li>MySQL</li>
+                <li>Excel</li>
+                <li>Power BI</li>
+                <li>Jupyter Notebooks</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+    </main>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            // Smooth scrolling for navigation links
-            $(".nav-link").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
+    <footer>
+        <p>© 2024 Rishiraj - Data Analyst Portfolio</p>
+    </footer>
 </body>
 </html>
